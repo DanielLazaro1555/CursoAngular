@@ -1,11 +1,11 @@
+"use strict";
 (function () {
-    function activar(quien, momento, objeto) {
-        if (objeto === void 0) { objeto = 'batiseñal'; }
+    function activar(quien, momento, objeto = 'batiseñal') {
         if (momento) {
-            console.log("".concat(quien, " activ\u00F3 la ").concat(objeto, " en la ").concat(momento, "."));
+            console.log(`${quien} activó la ${objeto} en la ${momento}.`);
         }
         else {
-            console.log("".concat(quien, " activ\u00F3 la ").concat(objeto, "."));
+            console.log(`${quien} activó la ${objeto}.`);
         }
     }
     activar('Gordon', 'tarde');
