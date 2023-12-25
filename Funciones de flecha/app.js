@@ -17,13 +17,17 @@
     const sumarF = (a, b) => a + b; // Se corrigió la declaración de parámetros
     //console.log(sumarN(5, 5)); // Salida esperada: 10
     //console.log(sumarF(10, 10)); // Salida esperada: 20
+    // Objeto hulk con un método 'smash'
     const hulk = {
         nombre: 'Hulk',
         smash() {
-            console.log(`${this.nombre} smash!!!`);
+            // Utilizando arrow function para conservar el contexto de 'this'
+            setTimeout(() => {
+                console.log(`${this.nombre} smash!!!`);
+            }, 1000);
         }
     };
-    hulk.smash();
+    hulk.smash(); // Llamada al método 'smash' del objeto 'hulk'
     // Descomenta la siguiente línea para probar la función y corregir errores
     // console.log(sumarN(2, 3));
 })();

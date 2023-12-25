@@ -13,7 +13,7 @@
     // console.log(miFuncionF('Flecha'));
 
     // Función para sumar dos números declarada usando la palabra clave 'function'
-    const sumarN = function(a: number, b: number) {
+    const sumarN = function (a: number, b: number) {
         return a + b;
     }
 
@@ -22,14 +22,18 @@
     //console.log(sumarN(5, 5)); // Salida esperada: 10
     //console.log(sumarF(10, 10)); // Salida esperada: 20
 
+    // Objeto hulk con un método 'smash'
     const hulk = {
-        nombre:'Hulk',
-        smash(){
-            console.log(`${this.nombre} smash!!!`)
+        nombre: 'Hulk',
+        smash() {
+            // Utilizando arrow function para conservar el contexto de 'this'
+            setTimeout(() => {
+                console.log(`${this.nombre} smash!!!`);
+            }, 1000);
         }
     }
 
-    hulk.smash();
+    hulk.smash(); // Llamada al método 'smash' del objeto 'hulk'
 
     // Descomenta la siguiente línea para probar la función y corregir errores
 
