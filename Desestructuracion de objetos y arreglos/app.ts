@@ -1,6 +1,6 @@
 (() => {
     const avenger = {
-        nombre : 'Steve',
+        nombre: 'Steve',
         clave: 'Capitan America',
         poder: 'Droga'
     }
