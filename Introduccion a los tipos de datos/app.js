@@ -1,13 +1,20 @@
 "use strict";
 (function () {
-    // Declaración y asignación de la constante 'mensaje'
-    const mensaje = 'hola';
-    // Bloque 'if' comentado (no afecta al resultado actual)
-    // if (true) {
-    //    // Declaración de una variable 'mensaje' dentro del bloque 'if'
-    //    // NOTA: Esta variable 'mensaje' es independiente de la constante exterior
-    //    let mensaje = 'Mundo';
-    // }
-    // Impresión en consola del valor de la constante 'mensaje'
-    console.log(mensaje);
+    let mensaje = 'Hola';
+    let numero = 123;
+    let booleano = true;
+    let hoy = new Date();
+    let cualquiercosa;
+    cualquiercosa = mensaje;
+    cualquiercosa = numero;
+    cualquiercosa = booleano;
+    cualquiercosa = hoy;
+    let spiderman = {
+        nombre: 'Peter',
+        edad: 30,
+    };
+    spiderman = {
+        nombre: 'Daniel',
+        edad: 30,
+    };
 })();
